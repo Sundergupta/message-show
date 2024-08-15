@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h1>Enter Your Details</h1>
+        
+        <input type="text" id="name-input" name="name" placeholder="Enter your name" onchange="handleInputChange(this)">
+        <p class="error" id="name-error">Please enter your name.</p>
+        
+        <input type="email" id="email-input" name="email" placeholder="Enter your email" onchange="handleInputChange(this)">
+        <p class="error" id="email-error">Please enter a valid email address (e.g., example@example.com).</p>
+        
+        <input type="text" id="message-input" name="message" placeholder="Enter your message" onchange="handleInputChange(this)">
+        <p class="error" id="message-error">Please enter your message.</p>
+        
+        <input type="button" value="Submit" onclick="submitForm()">
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
